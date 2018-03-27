@@ -10,10 +10,15 @@ contract ERC223Token is OG_ERC223 {
 
   mapping(address => uint) balances;
   
-  string public name;
-  string public symbol;
-  uint8 public decimals;
-  uint256 public totalSupply;
+  string public name = "NickV";
+  string public symbol = "NJV";
+  uint8 public decimals = 10;
+  uint256 public totalSupply = 400000000;
+
+
+  function ERC223Token() public {
+    balances[msg.sender] = totalSupply;
+  }
   
   
   // Function to access name of token .
