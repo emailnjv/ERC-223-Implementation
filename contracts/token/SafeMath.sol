@@ -2,7 +2,7 @@ pragma solidity ^0.4.19;
 
 
 /**
- * The pretty standard SafeMath file for Math operations with safety checks
+ * @title The pretty standard SafeMath file for Math operations with safety checks
  */
 library SafeMath {
   function mul(uint a, uint b) internal returns (uint) {
